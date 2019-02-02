@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<head>
+	<title>Vermont's Historic Sites</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+    <!-- Mobile meta tags-->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script type="text/javascript" src="js/leaflet.js"></script>	
+	<script type="text/javascript" src="js/leaflet.ajax.min.js"></script>	
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	
+</head>
+<body>
+
+    <noscript>
+		<div id="noscript_note">
+			You must have JavaScript enabled to view this page.
+		</div>
+	</noscript>
+
+	<div id="sidebar">
+		<div class="sidebar_header">
+			<h3>Vermont's Historic Sites</h3>
+		</div>
+		<div class="sidebar_content">
+			 The State of Vermont has 212 historic markers in their <a href="http://historicsites.vermont.gov/roadside_markers/list" target="_blank">online database</a>, but less than half have recorded latitude and longitude. I used data from <a href="http://www.waymarking.com/cat/details.aspx?f=1&guid=9cd074cf-33c7-4e49-8c79-0cde5f9c39a6&st=2" target="_blank">Wayfaring.com</a>, the <a href="http://www.historicalmarkerproject.com" target="_blank">Historical Marker Project</a>, and Google Maps imagery to attempt to geolocate the entire set.
+			 <br><br>
+			 There are definitely some interesting patterns here-- five markers in Woodstock, none in Barre-- but I'll save that for future analysis.
+			 <br><br>
+			 Built by <a href="http://www.mappingvermont.org" target="blank">MappingVermont</a>. 
+		</div>
+	</div>
+
+	<div class="toggle_description btn" type="button">
+		About this map
+	</div>
+
+	<div class="description_box">
+		<div class="x_button toggle_description btn btn-primary" type="button">
+			<strong>X</strong>
+		</div>
+		<div class="description_box_header"></div>
+		<div class="description_box_content">
+			<div class="description_box_text"></div>
+			<div id="caption_box"></div>
+		</div>
+	</div>
+	<div class="description_box_cover"></div>
+	
+	<div id="map"></div>
+
+	<script src="js/script.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58667523-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
